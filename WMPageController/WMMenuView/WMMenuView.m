@@ -67,6 +67,9 @@
             frame;
         });
     }
+    if (self.superview) {
+        self.center = CGPointMake(self.superview.frame.size.width / 2.f, self.superview.frame.size.height / 2);
+    }
 }
 
 - (void)setProgressViewCornerRadius:(CGFloat)progressViewCornerRadius {
